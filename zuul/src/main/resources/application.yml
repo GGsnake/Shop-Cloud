@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8019
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    sdk-service:
+      path: /sdk/**
+      serviceId: service-sdk

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../main/erk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../main/sdk-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../main/service-sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../main/service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../main/zuul" charset="UTF-8" />
+  </component>
+</project>
