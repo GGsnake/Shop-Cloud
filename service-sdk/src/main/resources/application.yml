@@ -1,9 +1,13 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+app:
+  id: SampleApp
+apollo:
+  meta: http://localhost:8080
 server:
   port: 8621
 spring:
   application:
     name: service-sdk
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.client.serviceUrl.defaultZone}
