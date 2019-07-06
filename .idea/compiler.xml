@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common-domain" />
         <module name="eureka" />
         <module name="pdd-service" />
         <module name="service-sdk" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-domain" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="main" target="1.8" />
       <module name="pdd-service" target="1.8" />

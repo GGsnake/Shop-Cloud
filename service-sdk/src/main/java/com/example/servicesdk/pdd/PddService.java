@@ -11,6 +11,7 @@ import com.pdd.pop.sdk.http.api.request.PddDdkGoodsSearchRequest;
 import com.pdd.pop.sdk.http.api.response.PddDdkGoodsDetailResponse;
 import com.pdd.pop.sdk.http.api.response.PddDdkGoodsPromotionUrlGenerateResponse;
 import com.pdd.pop.sdk.http.api.response.PddDdkGoodsSearchResponse;
+import lombok.extern.java.Log;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Log
 @RestController
 @RequestMapping(value = "/pdd")
 public class PddService {
@@ -35,12 +36,13 @@ public class PddService {
         JSONObject data = new JSONObject(10);
         PopClient popClient = SDKClient.getPopClient();
         PddDdkGoodsSearchResponse response = null;
+        log.warning("开始了");
         try {
-            response = popClient.syncInvoke(request);
-            List<PddDdkGoodsSearchResponse.GoodsSearchResponseGoodsListItem> goodsList = response.getGoodsSearchResponse().getGoodsList();
-            Integer totalCount = response.getGoodsSearchResponse().getTotalCount();
-            data.put("data", goodsList);
-            data.put("count", totalCount);
+//            response = popClient.syncInvoke(request);
+//            List<PddDdkGoodsSearchResponse.GoodsSearchResponseGoodsListItem> goodsList = response.getGoodsSearchResponse().getGoodsList();
+//            Integer totalCount = response.getGoodsSearchResponse().getTotalCount();
+            data.put("data", null);
+            data.put("count", 11);
             return data;
         } catch (Exception e) {
             e.printStackTrace();

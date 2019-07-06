@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../main/common-domain/common-domain.iml" filepath="$PROJECT_DIR$/../main/common-domain/common-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/erk/eureka.iml" filepath="$PROJECT_DIR$/erk/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/main.iml" filepath="$PROJECT_DIR$/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-sdk/service-sdk.iml" filepath="$PROJECT_DIR$/service-sdk/service-sdk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../main/service-user/service-user.iml" filepath="$PROJECT_DIR$/../main/service-user/service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-user/service-user.iml" filepath="$PROJECT_DIR$/service-user/service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
     </modules>
   </component>
